@@ -1,252 +1,98 @@
 /*
- Project 3 - Part 1 / 5
+Project 3 - Part 1a / 5
 Video:  Chapter 2 Part 5
- User-Defined Types
+User-Defined Types
 
- Create a branch named Part1
+Create a branch named Part1
 
- Purpose: The entire purpose of this 5-part project is to get you writing C++ code that compiles and to reinforce the syntax habits that C++ requires.  What you create in this project will be used as the basis of Project 5 in the course.   
- 
- 1) write 10 user-defined types in plain-English, 
-    in the comments above your UDT, write out, in plain-english, 3 things it can do, and 5 traits.
-    Note: Your 10th UDT will use 5 of your UDTs for its properties, so maybe start on UDT #10 first. This goes along with instruction #6.
+Purpose: The entire purpose of this 5-part project is to get you writing C++ code that compiles and to 
+reinforce the syntax habits that C++ requires.  
+What you create in this project will be used as the basis of Project 5 in the course.   
+
 ************************
-    Commit after you complete this step so i can review before you proceed with the rest of the projects
-    Ping me in Slack to review this step.
-    Wait for me to review before proceeding with step 2.
+Part1 purpose:  Learn to write UDTs
+
+You are going to write 10 UDTs in project3.  
+    Part 1a: you will learn to think about an object in terms of its sub-objects.
+    Part 1b: you will write 4 un-related UDTs in plain english
+    Part 1c: you will write 1 UDT in plain english that will be made of 5 related sub-objects
+    Part 1d: you will write plain-english UDTs for the 5 sub-objects that form the UDT defined in Part 1c
+    Part 1e: you will convert those 10 plain-english UDTs into code that runs.
 ************************
-  
- 2) define your struct for each of your 10 types. 
-    Copy your 3+5 comments into your struct body.
-    comment them out.
- 
- 3) declare your member variables and member functions underneath each plain-english comment in your struct's body.
-    give the member variables relevant data types
- 
- 4) make the function parameter list for those member functions use some of your User-Defined Types
-    You'll write definitions in part2 for these functions
-    you'll call each of these functions in part3
- 
- 5) make 2 of the 10 user-defined types have a nested class.  
-    this nested class also needs member functions.
-    this nested class is not considered one of your 10 UDTs.
- 
- 6) One of your 10 UDTs should only use UDTs for its member variable types.   
-    No primitives allowed!
-    it still needs member variables.
- 
- 7) After you finish defining each type, click the [run] button.  Clear up any errors or warnings as best you can.
- 
+
+1) Look at the picture of the car interior (Part1a pic.jpg).  
+    Fill in the blanks below which break this car interior down into sub-objects.
+
+    Several sub-objects are listed below that make up this car's interior.
+        you're going to name several things that you'll find on each subobject
+        you're going to name several things that each subobject can do.
+        If you've seen "Family Feud", we are going to do what they do in that show
+
+        A few blanks are filled in for you already.
+
+Main Object: Car Interior
+Sub Object 1: Steering Wheel
+    Name 4 things you'll find on the:    Steering Wheel
+        1) paddle shifters
+        2) 'cruise control' controls
+        3) 
+        4) 
+    Name 2 things you can do with the:   Steering Wheel
+        1) adjust cruise control settings.
+        2)
+        
+Sub Object 2: Instrument Cluster
+    Name 4 things you'll find on the:   Instrument Cluster
+        1)
+        2)
+        3)
+        4)
+    Name 3 things you can do with the:   Instrument Cluster
+        1)
+        2)
+        3)
+    
+Sub Object 3: Environment Controls
+    Name 3 things you'll find on the:    Environment Controls
+        1)
+        2)
+        3)
+    Name 3 things you can do with the:   Environment Controls
+        1)
+        2)
+        3)
+
+Sub Object 4: Infotainment System
+    Name 3 things you'll find on the:    Infotainment System
+        1)
+        2)
+        3)
+    Name 3 things you can do with the:   Infotainment System
+        1)
+        2)
+        3)
+
+Sub Object 5: Seat 
+    Name 3 things you'll find on the:    Seat
+        1)
+        2)
+        3)
+    Name 2 things you can do with the:   Seat
+        1)
+        2)
+*/
+/*
+ MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
+
  Commit your changes by clicking on the Source Control panel on the left, entering a message, and click [Commit and push].
  
- Make a pull request after you make your first commit and pin the pull request link to our DM thread.
+ If you didn't already: 
+    Make a pull request after you make your first commit
+    pin the pull request link and this repl.it link to our DM thread in a single message.
 
-send me a DM to check your pull request
+ send me a DM to review your pull request when the project is ready for review.
 
  Wait for my code review.
- */
-
-/*
- example:  
-
-//1) write out, in plain-english, 5 traits and 3 things it can do.
-Car Wash   
-5 properties:
-    1) has vacuum cleaners
-    2) has eco-friendly cleaning supplies
-    3) stores the amount of water used per week.
-    4) stores amount of profit made per week
-    5) number of cars serviced per day
-
-3 things it can do:
-    1) wash and wax car
-    2) charge customer
-    3) detail the car interior
- */
-struct CarWash //2)        
-{
-    //2) has vacuum cleaners
-    bool hasVacuumCleaners = true; //3) member variables with relevant data types.
-    //2) has eco-friendly cleaning supplies
-    bool hasEcoFriendlyCleaningSupplies = true; //3) member variables with relevant data types.
-    //2) stores the amount of water used per week.
-    float waterUsedPerWeek = 200.f; //3) member variables with relevant data types.
-    //2) stores amount of profit made per week
-    float profitPerWeek = 495.95f; //3) member variables with relevant data types.
-    //2) number of cars serviced per day
-    int numberOfCarsServiced = 10; //3) member variables with relevant data types.
-    
-    //5) make 2 of the 10 user-defined types have a nested class. 
-    struct Car   
-    {
-        //2) member variables with relevant data types.  the names are appropriate for the U.D.T.'s purpose.
-        bool isAPickupTruck = false;
-        float gasMileage = 26.2f;        
-
-        //3) a member function whose parameter has a default value.
-        //the parameter name is related to the work the function will perform.
-        void fillTank(double fuelAmountInGallons = 2.0);   
-    };
-
-    /* 
-    member functions with a user-defined type as the parameter.
-    The user-defined type parameter happens to be the nested class.
-    */
-
-    //2) wash and wax car
-    void washAndWaxCar( Car car );
-    //2) charge customer
-    float chargeCustomer();
-    //2) detail the car interior
-    void detailInterior( Car car );
-    
-               
-    //5) a member variable whose type is a UDT.
-    Car carBeingServiced;  
-};
-
-
-/*
-1)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-2)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-3)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-4)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-5)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-6)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-7)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-8)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-9)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
- */
-
-/*
-10)
-5 properties:
- These 5 properties should be UDTs that you defined above.
- this goes along with the instruction:
-    One of your 10 UDTs should only use UDTs for its member variable types.
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
  */
 
 #include <iostream>
