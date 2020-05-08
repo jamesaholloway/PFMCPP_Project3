@@ -35,51 +35,51 @@ Sub Object 1: Steering Wheel
     Name 4 things you'll find on the:    Steering Wheel
         1) paddle shifters
         2) 'cruise control' controls
-        3) 
-        4) 
+        3) Audio system controls
+        4) Horn
     Name 2 things you can do with the:   Steering Wheel
         1) adjust cruise control settings.
-        2)
+        2) sound horn
         
 Sub Object 2: Instrument Cluster
     Name 4 things you'll find on the:   Instrument Cluster
-        1)
-        2)
-        3)
-        4)
+        1) Speedometer
+        2) Warning lights
+        3) Headlight beam indicator
+        4) Rev counter
     Name 3 things you can do with the:   Instrument Cluster
-        1)
-        2)
-        3)
+        1) See car speed
+        2) See headlight beam status
+        3) See engine revs
     
 Sub Object 3: Environment Controls
     Name 3 things you'll find on the:    Environment Controls
-        1)
-        2)
-        3)
+        1) Fan speed control
+        2) Temperature control
+        3) Windscreen demist control
     Name 3 things you can do with the:   Environment Controls
-        1)
-        2)
-        3)
+        1) Set fan speed
+        2) Set car interior temperature
+        3) Turn windscreen demist on
 
 Sub Object 4: Infotainment System
     Name 3 things you'll find on the:    Infotainment System
-        1)
-        2)
-        3)
+        1) Audio volume control
+        2) Audio source control
+        3) Radio station selector
     Name 3 things you can do with the:   Infotainment System
-        1)
-        2)
-        3)
+        1) Turn audio volume up
+        2) Switch audio source to radio
+        3) Change radio station
 
 Sub Object 5: Seat 
     Name 3 things you'll find on the:    Seat
-        1)
-        2)
-        3)
+        1) Arm rests
+        2) Seat incline control
+        3) Heated seat control
     Name 2 things you can do with the:   Seat
-        1)
-        2)
+        1) Adjust angle of incline
+        2) Switch seat heater on
 */
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
