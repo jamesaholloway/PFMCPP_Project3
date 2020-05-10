@@ -53,59 +53,59 @@ Thing: Car Wash
  */
 
 /*
-Thing 1)
+Thing 1)    House
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of rooms
+    2) is it made of bricks or wood
+    3) stores how much electricity it consumes per month
+    4) stores its energy rating
+    5) does it have a pitched roof or does it have a flat roof
 3 things it can do:
-    1)
-    2)
-    3)
+    1) open and close front door
+    2) switch on burglar alarm
+    3) set interior temporature thermostat
  */
 
 /*
-Thing 2)
+Thing 2)    Computer
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Does it have a mouse
+    2) Resolution of display
+    3) How much RAM
+    4) Number of processor cores
+    5) Keyboard or tablet
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Play game
+    2) Switch on and off
+    3) Connect to internet
  */
 
 /*
-Thing 3)
+Thing 3)    Robot
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) What colour it is
+    2) Number of arms
+    3) Maximum speed of movement
+    4) Voice operated or computer operated
+    5) Amount ot time length before battery needs charging
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Pick up object
+    2) Move forward and backward
+    3) Rotate a specific number of degrees
  */
 
 /*
-Thing 4)
+Thing 4)    Synthesizer
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Is it analogue or digital
+    2) Number of keys on the keyboard
+    3) Manufacturer name
+    4) Filter setting value
+    5) Arpeggiator range setting
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Play sound
+    2) Detect key press
+    3) Output MIDI
  */
 
 
