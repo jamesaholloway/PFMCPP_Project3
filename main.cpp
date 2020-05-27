@@ -104,17 +104,17 @@ Thing 4)    Synthesizer
  */
 
 /*
-Thing 10)
+Thing 10) Aeroplane
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Fuselage
+    2) Control surfaces
+    3) Seats
+    4) Cockpit
+    5) Instrumentation
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Taxi
+    2) Take off
+    3) Cruise
  */
 
 /*
