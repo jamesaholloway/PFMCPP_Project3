@@ -125,73 +125,73 @@ Thing 4)    Synthesizer
 
 
 /*
-Thing 5)
+Thing 5) Fuselage
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Length
+    2) Number of doors
+    3) Maximum number of seats
+    4) Actual number of seats
+    5) Number of windows
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Open doors
+    2) Board plane
+    3) Deplane
  */
 
 /*
-Thing 6)
+Thing 6) Control Surfaces
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Flaps extended true/false
+    2) Left aileron angle
+    3) Right aileron angle
+    4) Rudder orientation angle
+    5) Undercarriage up/down
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Turn plane left/right
+    2) Move plane up/down
+    3) Move flaps to take-off position
  */
 
 /*
-Thing 7)
+Thing 7) Seats
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Seat class
+    2) Armrests up/down
+    3) Footrest extension amount
+    4) Angle of recline
+    5) tray up/down
 3 things it can do:
-    1)
-    2)
-    3)
+    1) recline/sit up
+    2) raise/lower armrests
+    3) raise/lower tray
  */
 
 /*
-Thing 8)
+Thing 8) Cockpit
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Door open/closed
+    2) Number of seats
+    3) Ambient temperature
+    4) Lighting intensity
+    5) Winscreen wipers on/off
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Switch windscreen wipers on/off
+    2) Set ambient temperature
+    3) Lock door
  */
 
 /*
-Thing 9)
+Thing 9) Instrumentation
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Plane airspeed reading
+    2) Undercarriage up/down indicator
+    3) Engine throttle amount
+    4) Artificial horizon angle
+    5) Seatbelt sign on/off
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Display airspeed
+    2) Switch seatbelt sign on/off
+    3) Deploy/retract undercarriage
  */
 
 /*
