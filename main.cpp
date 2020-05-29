@@ -128,6 +128,18 @@ Thing 1)    House
     3) set interior temporature thermostat
  */
 
+struct House {
+    // 1) number of rooms
+    // 2) is it made of bricks or wood
+    // 3) stores how much electricity it consumes per month
+    // 4) stores its energy rating
+    // 5) does it have a pitched roof or does it have a flat roof
+
+    // 1) open and close front door
+    // 2) switch on burglar alarm
+    // 3) set interior temporature thermostat
+};
+
 /*
 Thing 2)    Computer
 5 properties:
@@ -141,6 +153,20 @@ Thing 2)    Computer
     2) Switch on and off
     3) Connect to internet
  */
+
+struct Computer {
+    // 1) Does it have a mouse
+    // 2) Resolution of display
+    // 3) How much RAM
+    // 4) Number of processor cores
+    // 5) Keyboard or tablet
+
+    // 1) Play game
+    // 2) Switch on and off
+    // 3) Connect to internet
+
+
+};
 
 /*
 Thing 3)    Robot
@@ -156,6 +182,18 @@ Thing 3)    Robot
     3) Rotate a specific number of degrees
  */
 
+struct Robot {
+    // 1) What colour it is
+    // 2) Number of arms
+    // 3) Maximum speed of movement
+    // 4) Voice operated or computer operated
+    // 5) Amount ot time length before battery needs charging
+
+    // 1) Pick up object
+    // 2) Move forward and backward
+    // 3) Rotate a specific number of degrees 
+};
+
 /*
 Thing 4)    Synthesizer
 5 properties:
@@ -170,6 +208,17 @@ Thing 4)    Synthesizer
     3) Output MIDI
  */
 
+struct Synthesizer {
+    // 1) Is it analogue or digital
+    // 2) Number of keys on the keyboard
+    // 3) Manufacturer name
+    // 4) Filter setting value
+    // 5) Arpeggiator range setting
+
+    // 1) Play sound
+    // 2) Detect key press
+    // 3) Output MIDI
+};
 
 /*
 Thing 5) Fuselage
@@ -185,6 +234,18 @@ Thing 5) Fuselage
     3) Deplane
  */
 
+struct Fuselage {
+    // 1) Length
+    // 2) Number of doors
+    // 3) Maximum number of seats
+    // 4) Actual number of seats
+    // 5) Number of windows
+
+    // 1) Open doors
+    // 2) Board plane
+    // 3) Deplane
+};
+
 /*
 Thing 6) Control Surfaces
 5 properties:
@@ -198,6 +259,18 @@ Thing 6) Control Surfaces
     2) Move plane up/down
     3) Move flaps to take-off position
  */
+
+struct controlSurfaces {
+    // 1) Flaps extended true/false
+    // 2) Left aileron angle
+    // 3) Right aileron angle
+    // 4) Rudder orientation angle
+    // 5) Undercarriage up/down
+
+    // 1) Turn plane left/right
+    // 2) Move plane up/down
+    // 3) Move flaps to take-off position
+};
 
 /*
 Thing 7) Seats
@@ -213,19 +286,35 @@ Thing 7) Seats
     3) raise/lower tray
  */
 
+struct Seats {
+    // 1) Seat class
+    // 2) Armrests up/down
+    // 3) Footrest extension amount
+    // 4) Angle of recline
+    // 5) tray up/down
+
+    // 1) recline/sit up
+    // 2) raise/lower armrests
+    // 3) raise/lower tray
+};
+
 /*
 Thing 8) Cockpit
 5 properties:
-    1) Door open/closed
-    2) Number of seats
-    3) Ambient temperature
-    4) Lighting intensity
-    5) Winscreen wipers on/off
+    1) Seat class
+    2) Armrests up/down
+    3) Footrest extension amount
+    4) Angle of recline
+    5) tray up/down
 3 things it can do:
-    1) Switch windscreen wipers on/off
-    2) Set ambient temperature
-    3) Lock door
+    1) recline/sit up
+    2) raise/lower armrests
+    3) raise/lower tray
  */
+
+struct Cockpit {
+
+};
 
 /*
 Thing 9) Instrumentation
@@ -241,6 +330,10 @@ Thing 9) Instrumentation
     3) Deploy/retract undercarriage
  */
 
+struct Instrumentation {
+
+};
+
 /*
 Thing 10) Aeroplane
 5 properties:
@@ -254,6 +347,10 @@ Thing 10) Aeroplane
     2) Take off
     3) Cruise
  */
+
+struct Aeroplane {
+
+};
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
