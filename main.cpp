@@ -128,7 +128,8 @@ Thing 1)    House
     3) set interior temporature thermostat
  */
 
-struct House {
+struct House 
+{
     // 1) number of rooms
     int numberOfRooms = 10;
     // 2) is it made of bricks or wood
@@ -162,7 +163,8 @@ Thing 2)    Computer
     3) Connect to internet
  */
 
-struct Computer {
+struct Computer 
+{
     // 1) Does it have a mouse
     bool hasMouse = true;
     // 2) Resolution of display
@@ -198,7 +200,8 @@ Thing 3)    Robot
     3) Rotate a specific number of degrees
  */
 
-struct Robot {
+struct Robot 
+{
     // 1) What colour it is
     int colour = 7;
     // 2) Number of arms
@@ -210,7 +213,8 @@ struct Robot {
     // 5) Amount ot time length before battery needs charging
     float batteryTime = 6.f;
 
-    struct Object {
+    struct Object 
+    {
         // object weight
         float weight = 10.5f;
         // object density
@@ -253,7 +257,8 @@ Thing 4)    Synthesizer
     3) Output MIDI
  */
 
-struct Synthesizer {
+struct Synthesizer 
+{
     // 1) Is it analogue or digital
     bool analogue = true;
     // 2) Number of keys on the keyboard
@@ -265,7 +270,8 @@ struct Synthesizer {
     // 5) Arpeggiator range setting
     int arpeggiatorRange = 3;
 
-    struct keyClass {
+    struct keyClass 
+    {
         // numeric key position
         int noteValue = 32;
         // corresponding frequency of note
@@ -307,7 +313,8 @@ Thing 5) Fuselage
     3) Deplane
  */
 
-struct Fuselage {
+struct Fuselage 
+{
     // 1) Length
     float length = 30.0f;
     // 2) Number of doors
@@ -341,7 +348,8 @@ Thing 6) Control Surfaces
     3) Move flaps to take-off position
  */
 
-struct controlSurfaces {
+struct controlSurfaces 
+{
     // 1) Flaps extended true/false
     bool flapsExtended = true;
     // 2) Left aileron angle
@@ -375,7 +383,8 @@ Thing 7) Seats
     3) raise/lower tray
  */
 
-struct Seats {
+struct Seats 
+{
     // 1) Seat class
     char cabinClass = 'e';
     // 2) Armrests up/down
@@ -409,7 +418,8 @@ Thing 8) Cockpit
     3) Lock door
  */
 
-struct Cockpit {
+struct Cockpit 
+{
     // 1) Door open/closed
     bool cockpitDoorOpen = false;
     // 2) Number of seats
@@ -443,7 +453,8 @@ Thing 9) Instrumentation
     3) Deploy/retract undercarriage
  */
 
-struct Instrumentation {
+struct Instrumentation 
+{
     // 1) Plane airspeed reading
     float airspeed = 300.f;
     // 2) Undercarriage up/down indicator
@@ -477,7 +488,8 @@ Thing 10) Aeroplane
     3) Cruise
  */
 
-struct Aeroplane {
+struct Aeroplane 
+{
     // 1) Fuselage
     Fuselage boeingSevenFourSevenFuselage;
     // 2) Control surfaces
