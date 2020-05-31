@@ -58,7 +58,7 @@ void Person::run(int howFast, bool startWithLeftFoot)
         rightFoot.stepForward();
         leftFoot.stepForward();
     }
-    distanceTravelled += leftFoot.stepSize() + rightFoot.stepSize();
+    distanceTravelled += howFast * (leftFoot.stepSize() + rightFoot.stepSize());
 }
 
  /*
@@ -336,7 +336,7 @@ bool Synthesizer::playSound (float frequency, float volume, int channel)
     }
     else
     {
-        std::cout << "Note played at " << frequency << " Hz\n";
+        std::cout << "Note played at " << frequency << " Hz " << "on channel " << channel << "\n";
         return true;
     }
 }
@@ -354,9 +354,11 @@ float Synthesizer::detectkey (keyClass myPressedKey)
         return myPressedKey.noteFrequency;
     }
 }
-void Synthesizer::keyClass::playNote(float noteFrequency, float noteVelocity)
+void Synthesizer::keyClass::playNote(float myFrequency, float myVelocity)
 {
     /* code to play a note */
+    myFrequency = 0.f;
+    myVelocity = 0.f;
 }
 bool Synthesizer::transmitMIDI (keyClass key, int MIDIChannel)
 {
@@ -394,9 +396,9 @@ struct Fuselage
     bool dePlane (int numberSeats, int planeID);
 };
 
-bool Fuselage::openDoor (int doorNumber, int numberOfDoors)
+bool Fuselage::openDoor (int doorNumber, int totalDoors)
 {
-    if(doorNumber > numberOfDoors)
+    if(doorNumber > totalDoors)
     {
         std::cout << "Invalid door number\n";
         return false;
@@ -408,9 +410,9 @@ bool Fuselage::openDoor (int doorNumber, int numberOfDoors)
     }
 }
 
-bool Fuselage::boardPlane (int numberSeats, int planeID)
+bool Fuselage::boardPlane (int occupiedSeats, int planeID)
 {
-    if(numberSeats < 300)
+    if(occupiedSeats < 300)
     {
         std::cout << "Boarding not yet complete.\n";
         return false;
@@ -422,16 +424,16 @@ bool Fuselage::boardPlane (int numberSeats, int planeID)
     }
 }
 
-bool Fuselage::dePlane (int numberSeats, int planeID)
+bool Fuselage::dePlane (int vacatedSeats, int planeID)
 {
-    if(numberSeats == 300)
+    if(vacatedSeats == 300)
     {
         std::cout << "Deplaning complete.\n";
         return true;
     }
     else
     {
-        std::cout << (300 - numberSeats) << " people still to disembark from plane " << planeID << "\n";
+        std::cout << (300 - vacatedSeats) << " people still to disembark from plane " << planeID << "\n";
         return false;
     }
 }
