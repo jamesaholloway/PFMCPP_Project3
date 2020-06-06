@@ -94,11 +94,11 @@ struct House
 
 bool House::operateFrontDoor(bool isFrontDoorOpen)
 {
-     if(isFrontDoorOpen == true)
-     {
+    if(isFrontDoorOpen == true)
+    {
         std::cout << "Front Door closed\n";
         return false;
-     }
+    }
     std::cout << "Front Door open\n";
     return true;  
 }
