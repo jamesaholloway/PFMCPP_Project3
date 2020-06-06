@@ -99,11 +99,8 @@ bool House::operateFrontDoor(bool isFrontDoorOpen)
         std::cout << "Front Door closed\n";
         return false;
      }
-    else
-    {
-        std::cout << "Front Door open\n";
-        return true;
-    }  
+    std::cout << "Front Door open\n";
+    return true;  
 }
 
 bool House::activateAlarm(int zones)
@@ -113,11 +110,8 @@ bool House::activateAlarm(int zones)
         std::cout << "Zones " << zones <<" activated\n";
         return true;
     }
-    else
-    {
-        std::cout << "No zones activated\n";
-        return false;
-    }
+    std::cout << "No zones activated\n";
+    return false;
 }
 
 bool House::setThermostat (float temperatureSetting)
@@ -128,10 +122,8 @@ bool House::setThermostat (float temperatureSetting)
         std::cout << "Cooling\n";
         return false;
     }
-    else{
-        std::cout << "Warming\n";
-        return true;
-    }
+    std::cout << "Warming\n";
+    return true;
 }
 
 struct Computer 
@@ -162,11 +154,8 @@ bool Computer::playGame( int numPlayers)
         std::cout << "Playing game with " << numPlayers << " players\n";
         return true;
     }
-    else
-    {
-        std::cout << "No players want to play\n";
-        return false;
-    }
+    std::cout << "No players want to play\n";
+    return false;
 }
 
 bool Computer::switchOnOff()
@@ -178,11 +167,8 @@ bool Computer::switchOnOff()
         std::cout << "Switching off\n";
         return false;
     }
-    else
-    {
-        std::cout << "Switching on\n";
-        return true;
-    }
+    std::cout << "Switching on\n";
+    return true;
 }
 
 bool Computer::connectURL( char URL)
@@ -192,11 +178,8 @@ bool Computer::connectURL( char URL)
         std::cout << "Connecting to " << URL << " \n";
         return true;
     }
-    else
-    {
-        std::cout << "No URL supplied\n";
-        return false;
-    }
+    std::cout << "No URL supplied\n";
+    return false;
 }
 
 struct Robot 
@@ -249,11 +232,8 @@ bool Robot::pickupObject(Object myObject)
         std::cout << "Object is too heavy\n";
         return false;
     }
-    else
-    {
-        std::cout << "Object is now held\n";
-        return true;
-    }
+    std::cout << "Object is now held\n";
+    return true;
 }
 
 float Robot::moveRobot (float speed)
@@ -263,11 +243,8 @@ float Robot::moveRobot (float speed)
         std::cout << "Robot stopped\n";
         return 0.f;
     }
-    else
-    {
-        std::cout << "Robot now moving at " << speed << " m/s\n";
-        return speed;
-    }
+    std::cout << "Robot now moving at " << speed << " m/s\n";
+    return speed;
 }
 
 float Robot::rotateRobot (float angle)
@@ -278,11 +255,8 @@ float Robot::rotateRobot (float angle)
         std::cout << "Robot has not rotated\n";
         return 0.f;
     }
-    else
-    {
-        std::cout << "Robot now rotated by " << angle << " degrees\n";
-        return angle;
-    }
+    std::cout << "Robot now rotated by " << angle << " degrees\n";
+    return angle;
 }
 
 struct Synthesizer 
@@ -334,11 +308,8 @@ bool Synthesizer::playSound (float frequency, float volume, int channel)
         std::cout << "Muted\n";
         return false;
     }
-    else
-    {
-        std::cout << "Note played at " << frequency << " Hz " << "on channel " << channel << "\n";
-        return true;
-    }
+    std::cout << "Note played at " << frequency << " Hz " << "on channel " << channel << "\n";
+    return true;
 }
 
 float Synthesizer::detectkey (keyClass myPressedKey)
@@ -348,11 +319,8 @@ float Synthesizer::detectkey (keyClass myPressedKey)
         std::cout << "No key pressed\n";
         return 0.f;
     }
-    else
-    {
-        std::cout << "Note played at " << myPressedKey.noteFrequency << " Hz\n";
-        return myPressedKey.noteFrequency;
-    }
+    std::cout << "Note played at " << myPressedKey.noteFrequency << " Hz\n";
+    return myPressedKey.noteFrequency;
 }
 void Synthesizer::keyClass::playNote(float myFrequency, float myVelocity)
 {
@@ -367,12 +335,9 @@ bool Synthesizer::transmitMIDI (keyClass key, int MIDIChannel)
         std::cout << "No key pressed\n";
         return false;
     }
-    else
-    {
-        key.playNote(key.noteFrequency, key.noteVelocity);
-        std::cout << "Note played on channel " << MIDIChannel << " Hz\n";
-        return true;
-    }    
+    key.playNote(key.noteFrequency, key.noteVelocity);
+    std::cout << "Note played on channel " << MIDIChannel << " Hz\n";
+    return true;    
 }
 
 struct Fuselage 
@@ -403,11 +368,8 @@ bool Fuselage::openDoor (int doorNumber, int totalDoors)
         std::cout << "Invalid door number\n";
         return false;
     }
-    else
-    {
-        std::cout << "Opened door number:" << doorNumber << "\n";
-        return true;
-    }
+    std::cout << "Opened door number:" << doorNumber << "\n";
+    return true;
 }
 
 bool Fuselage::boardPlane (int occupiedSeats, int planeID)
@@ -417,11 +379,8 @@ bool Fuselage::boardPlane (int occupiedSeats, int planeID)
         std::cout << "Boarding not yet complete.\n";
         return false;
     }
-    else
-    {
-        std::cout << planeID << " fully boarded\n";
-        return true;
-    }
+    std::cout << planeID << " fully boarded\n";
+    return true;
 }
 
 bool Fuselage::dePlane (int vacatedSeats, int planeID)
@@ -431,11 +390,8 @@ bool Fuselage::dePlane (int vacatedSeats, int planeID)
         std::cout << "Deplaning complete.\n";
         return true;
     }
-    else
-    {
-        std::cout << (300 - vacatedSeats) << " people still to disembark from plane " << planeID << "\n";
-        return false;
-    }
+    std::cout << (300 - vacatedSeats) << " people still to disembark from plane " << planeID << "\n";
+    return false;
 }
 
 struct controlSurfaces 
@@ -468,7 +424,7 @@ float controlSurfaces::bankPlane(float angleOfTurn )
     else
     {
         std::cout << "Plane headed at heading " << angleOfTurn << "\n";
-    }
+    }    
     return angleOfTurn;
 }
 
@@ -492,11 +448,8 @@ bool controlSurfaces::moveFlaps(bool flapOrientation)
         std::cout << "Flaps extended\n";
         return false;
     }
-    else
-    {
-        std::cout << "Flaps retracted\n";
-        return true;
-    }
+    std::cout << "Flaps retracted\n";
+    return true;
 }
 
 struct Seats 
@@ -526,29 +479,23 @@ float Seats::reclineSeat(float seatAngle)
     {
         std::cout << "Seat upright.\n";
     }
-    else
-    {
-        std::cout << "Seat reclined to " << seatAngle << "\n";
-    }
+    std::cout << "Seat reclined to " << seatAngle << "\n";
     return seatAngle;    
 }
 
 bool Seats::moveArmrest(bool ArmrestPosition, bool isLeftArmrest)
 {
-      if (isLeftArmrest == true)
+    if (isLeftArmrest == true)
     {
         std::cout << "Left armrest moved to up position";
     }
-    else
-    {
-        std::cout << "Right armrest moved to up position";
-    }
+    std::cout << "Right armrest moved to up position";
     return ArmrestPosition;    
 }
 
 bool Seats::moveTray(bool trayPosition)
 {
-      if (trayPosition == true)
+    if (trayPosition == true)
     {
         std::cout << "Tray is up\n";
     }
@@ -587,12 +534,8 @@ bool Cockpit::operateWipers(int wiperSpeed)
     std::cout << "Wipers set to " << wiperSpeed << "\n";
     return true;        
     }
-    else
-    {
     std::cout << "Wipers stopped.\n";
-    return false;  
-    }
-
+    return false;
 }
 
 float Cockpit::setTemp(float desiredTemp, int fanSpeed)
@@ -603,10 +546,8 @@ float Cockpit::setTemp(float desiredTemp, int fanSpeed)
         return 0.f;  
     }
     else
-    {
-        std::cout << "Temperature now set to " << desiredTemp << "\n";
-        return desiredTemp;   
-    }
+    std::cout << "Temperature now set to " << desiredTemp << "\n";
+    return desiredTemp;   
 }
 
 bool Cockpit::setDoorLook(bool isLocked)
@@ -616,11 +557,8 @@ bool Cockpit::setDoorLook(bool isLocked)
         std::cout << "Door unlocked\n";
         return false;  
     }
-    else
-    {
-        std::cout << "Door locked\n";
-        return true; 
-    }
+    std::cout << "Door locked\n";
+    return true; 
 }
 
 struct Instrumentation 
@@ -654,30 +592,24 @@ void Instrumentation::displayAirspeed (float airSpeed, bool isDecimal)
 
 bool Instrumentation::changeSeatbeltSign(bool isOn)
 {
-        if(isOn == true)
+    if(isOn == true)
     {
         std::cout << "Seatbelts off\n";
         return false;  
     }
-    else
-    {
-        std::cout << "Seatbelts on\n";
-        return true; 
-    }
+    std::cout << "Seatbelts on\n";
+    return true; 
 }
 
 bool Instrumentation::deployUndercarriage(bool isUp)
 {
-          if(isUp == true)
+    if(isUp == true)
     {
         std::cout << "Undercarriage is down\n";
         return false;  
     }
-    else
-    {
-        std::cout << "Undercarriage is up\n";
-        return true; 
-    }      
+    std::cout << "Undercarriage is up\n";
+    return true;       
 }
 
 struct Aeroplane 
