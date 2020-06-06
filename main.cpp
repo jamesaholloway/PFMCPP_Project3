@@ -531,8 +531,8 @@ bool Cockpit::operateWipers(int wiperSpeed)
 {
     if (wiperSpeed >0)
     {
-    std::cout << "Wipers set to " << wiperSpeed << "\n";
-    return true;        
+        std::cout << "Wipers set to " << wiperSpeed << "\n";
+        return true;        
     }
     std::cout << "Wipers stopped.\n";
     return false;
@@ -545,7 +545,6 @@ float Cockpit::setTemp(float desiredTemp, int fanSpeed)
         std::cout << "Error: fan is off\n";
         return 0.f;  
     }
-    else
     std::cout << "Temperature now set to " << desiredTemp << "\n";
     return desiredTemp;   
 }
@@ -637,7 +636,7 @@ float Aeroplane::moveAeroplane(float groundSpeed, float orientationAngle)
 {
     if(groundSpeed == 0.f)
     {
-           std::cout << "Aeroplane stationary\n";  
+        std::cout << "Aeroplane stationary\n";  
     }
     else
     {
@@ -654,7 +653,7 @@ void Aeroplane::takeoffAeroplane(float groundSpeed, float engineThrottle, float 
     }
     else
     {
-          std::cout << "Aeroplane still on ground\n";
+        std::cout << "Aeroplane still on ground\n";
     }
 }
 
